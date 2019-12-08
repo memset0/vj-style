@@ -1,0 +1,146 @@
+@-moz-document domain("vjudge.net") {
+/* === toolbar === */
+nav.navbar.navbar-dark {
+    border-radius: 0px;
+    background-color: #555 !important;
+    height: 64px;
+    line-height: 64px;
+    padding: 0;
+    box-shadow: 0 2px 4px -1px rgba(0,0,0,.2), 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12);
+    width: 100%;
+}
+nav.navbar.navbar-dark .nav-link {
+    padding: 0;
+}
+nav.navbar.navbar-dark .navbar-brand {
+    padding: 0;
+    font-size: 16px;
+    margin: 0 20px;
+}
+nav.navbar.navbar-dark .navbar-nav {
+    margin-right: 20px;
+}
+nav.navbar.navbar-dark .navbar-brand img {
+    display: none;
+}
+nav.navbar.navbar-dark .navbar-brand:before {
+    content: " \f0eb";
+    font-size: 1rem;
+    margin-right: 0.1rem;
+    font-family: FontAwesome;
+}
+nav.navbar.navbar-dark .nav-link,
+nav.navbar.navbar-dark .navbar-brand {
+    color: #fff !important;
+    transition-duration : .2s;
+    transition-property : color;
+}
+nav.navbar.navbar-dark .nav-link:hover,
+nav.navbar.navbar-dark .navbar-brand:hover {
+    color: #aaa !important;
+}
+}
+
+@-moz-document domain("vjudge.net") {
+/* ==== content === */
+body > dt,
+#description-container > dt {
+    margin: 20px 0 15px 35px;
+    padding: 0;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: Lato, -apple-system, 'PingFang SC', 'Source Han Sans SC', 'Noto Sans CJK SC', 'Microsoft Yahei', 'Lantinghei SC', 'Hiragino Sans GB', 'Microsoft Sans Serif', 'WenQuanYi Micro Hei', sans-serif;
+}
+body > dd,
+#description-container > dd {
+    background: #fff;
+    border-radius: 2px;
+    padding: 15px 25px;
+    box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
+    font-family: 'Open Sans', 'Source Han Sans SC', 'Noto Sans CJK SC', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft Yahei', sans-serif;
+}
+}
+
+@-moz-document domain("vjudge.net") {
+/* === sidebar === */
+
+#prob-operation .container {
+    padding: 0 15px;
+}
+#prob-operation .container .col-xs-6,
+#prob-operation .container .col-xs-12 {
+    padding: 0;
+}
+#prob-operation .container .col-xs-6:nth-of-type(1) {
+    padding-right: 5px;
+}
+#prob-operation .container .col-xs-6:nth-of-type(2) {
+    padding-left: 5px;
+}
+#prob-operation .container .col-xs-12 {
+    padding-bottom: 10px;
+}
+#prob-operation .container .btn {
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
+    transition-duration : .2s;
+    transition-property : background-color;
+}
+
+/* --------- */
+
+#prob-properties .container .card {
+    background: #fff;
+    border: none;
+    border-radius: 2px;
+    padding: 15px 15px;
+    margin: 0;
+    box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
+}
+#prob-properties .container {
+    padding: 0;
+}
+#prob-properties .container .card .col-sm-7,
+#prob-properties .container .card .col-sm-8 {
+    text-align: right;
+}
+
+/* --------- */
+
+#prob-descriptions .list-group {
+    border-radius: 2px;
+    box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
+}
+#prob-descriptions .list-group-item {
+    background: #fff;
+    border: none;
+    border-radius: 0px;
+    z-index: 0;
+    padding: 15px 25px;
+}
+#prob-descriptions > span {
+    display: none;
+}
+#prob-descriptions .list-group-item a b {
+    font-weight: normal;
+    font-size: 16px;
+}
+}
+
+@-moz-document domain("vjudge.net") {
+/* === button === */
+.btn {
+    font-size: 14px !important;
+    letter-spacing: .1px;
+}
+}
+
+@-moz-document domain("vjudge.net") {
+/* === other === */
+#img_go_top,
+#img-support,
+.body-footer img {
+    display: none;
+}
+}
