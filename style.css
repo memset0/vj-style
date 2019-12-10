@@ -1,5 +1,5 @@
 @-moz-document domain("vjudge.net") {
-/* === toolbar === */
+ /* === toolbar === */
 nav.navbar.navbar-dark {
     border-radius: 0px;
     background-color: #555 !important;
@@ -172,8 +172,17 @@ table td,
 }
 }
 
-@-moz-document domain("vjudge.net") {
+@-moz-document url-prefix("https://vjudge.net/contest") {
 /* === contest page === */
+
+/* --- announcement --- */
+#time-info {
+    border: none;
+    border-radius: 2px;
+    background: #fff;
+    box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
+    margin-bottom: 20px;
+}
 
 /* --- tabs --- */
 #contest-tabs {
@@ -211,8 +220,73 @@ table td,
 #contest-tabs .btn-group {
     border: none;
 }
+
+/* --- problem --- */
 #contest_problem #prob-left-panel,
 #contest_problem #prob-right-panel {
     padding-top: 0;
+}
+
+/* --- status --- */
+#contest_status #listStatus_paginate {
+    border: none;
+    border-radius: 2px;
+    background: #fff;
+    box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
+    margin-bottom: 20px;
+    height: 50px;
+}
+#contest_status #listStatus_paginate .pagination {
+    margin: 0;
+    border-radius: 0;
+    height: 50px;
+}
+#contest_status #listStatus_paginate .pagination .paginate_button a {
+    border: none;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 15px;
+    font-size: 15px;
+    text-decoration: none !important;
+    transition-duration: .2s;
+    transition-property: color;
+    background: none;
+    color: #000;
+}
+#contest_status #listStatus_paginate .pagination .paginate_button.active a,
+#contest_status #listStatus_paginate .pagination .paginate_button a:hover {
+    text-decoration: none !important;
+    background: none;
+    color: #0275d8;
+}
+
+/* --- discuss --- */
+#contest_discuss .comment-posts-container {
+    margin: 0;
+}
+#contest_discuss .comment-edit {
+    border: none;
+    border-radius: 2px;
+    background: #fff;
+    box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
+    margin-bottom: 20px;
+}
+#contest_discuss .form-control {
+    border: none;
+    border-radius: 0px;
+    height: 150px !important;
+    padding: 20px !important;
+}
+#contest_discuss .buttons .btn {
+    border: none;
+    background: #fff !important;
+	transition-duration: .2s;
+	transition-property: color;
+    padding: 0 15px;
+    height: 30px;
+    line-height: 30px;
+}
+#contest_discuss .buttons .btn:hover {
+    color: #0275d8;
 }
 }
