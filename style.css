@@ -140,6 +140,7 @@ body > dd,
 /* === other === */
 #img_go_top,
 #img-support,
+#img_find_me,
 .body-footer img {
     display: none;
 }
@@ -258,6 +259,44 @@ table td,
     text-decoration: none !important;
     background: none;
     color: #0275d8;
+}
+#contest_status #buttonContainer {
+    border: none;
+    border-radius: 2px;
+    background: #fff;
+    box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
+    height: 50px;
+    line-height: 50px;
+    margin-bottom: 20px;
+    padding: 0;
+    margin-left: 40px;
+}
+#contest_status #buttonContainer .btn {
+    height: 50px;
+    line-height: 50px;
+    border: none;
+    padding: 0 15px;
+    margin: 0;
+    border-radius: 0px;
+    font-size: 15px !important;
+    background: none;
+    color: #000;
+    transition-duration: .2s;
+    transition-property: color;
+}
+#contest_status #buttonContainer .btn:hover {
+    text-decoration: none !important;
+    background: none;
+    color: #0275d8;
+}
+
+/* --- rank --- */
+#contest_rank #contest-rank-table {
+    border: none;
+    border-radius: 2px;
+    background: #fff;
+    box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
+    margin-bottom: 20px;
 }
 
 /* --- discuss --- */
